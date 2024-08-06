@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33F5BABAB993DC4926879BDD /* Pods_HealthGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2041DFCC8F693BA95ABA7A76 /* Pods_HealthGuard.framework */; };
+		545E469C111E1D50D02F37A8 /* Pods_HealthGuard_HealthGuardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCD7C7E9D6B485EDC8490BB /* Pods_HealthGuard_HealthGuardUITests.framework */; };
+		A8CAE7F52C61DBBA00431371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE7F42C61DBBA00431371 /* AppDelegate.swift */; };
+		A8CAE7F72C61DBBA00431371 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE7F62C61DBBA00431371 /* SceneDelegate.swift */; };
+		A8CAE7FC2C61DBBA00431371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CAE7FA2C61DBBA00431371 /* Main.storyboard */; };
+		A8CAE7FE2C61DBBC00431371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CAE7FD2C61DBBC00431371 /* Assets.xcassets */; };
+		A8CAE8012C61DBBC00431371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CAE7FF2C61DBBC00431371 /* LaunchScreen.storyboard */; };
+		A8CAE80C2C61DBBC00431371 /* HealthGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE80B2C61DBBC00431371 /* HealthGuardTests.swift */; };
+		A8CAE8162C61DBBC00431371 /* HealthGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8152C61DBBC00431371 /* HealthGuardUITests.swift */; };
+		A8CAE8182C61DBBC00431371 /* HealthGuardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8172C61DBBC00431371 /* HealthGuardUITestsLaunchTests.swift */; };
+		A8CAE8282C61DC4200431371 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8272C61DC4200431371 /* Constant.swift */; };
+		A8CAE82E2C61E25E00431371 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE82D2C61E25E00431371 /* EndPointType.swift */; };
+		A8CAE8312C61E2A900431371 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8302C61E2A900431371 /* APIManager.swift */; };
+		A8CAE83B2C61E45100431371 /* ProductCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE83A2C61E45100431371 /* ProductCategories.swift */; };
+		A8CAE8402C61EDAC00431371 /* ProductCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE83F2C61EDAC00431371 /* ProductCategoriesVC.swift */; };
+		A8CAE8432C61F00A00431371 /* ProductCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8412C61F00A00431371 /* ProductCategoryCollectionCell.swift */; };
+		A8CAE8442C61F00A00431371 /* ProductCategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8CAE8422C61F00A00431371 /* ProductCategoryCollectionCell.xib */; };
+		A8CAE8462C61F0B700431371 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8452C61F0B700431371 /* ProductViewModel.swift */; };
+		A8CAE8482C61F19A00431371 /* ProductEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8472C61F19A00431371 /* ProductEndPoint.swift */; };
+		A8CAE84A2C62336000431371 /* codableHelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8492C62336000431371 /* codableHelperClass.swift */; };
+		A8CAE84C2C62340A00431371 /* UIViewExtension + shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE84B2C62340A00431371 /* UIViewExtension + shadow.swift */; };
+		A8CAE8532C6238A600431371 /* ProductListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8522C6238A600431371 /* ProductListingVC.swift */; };
+		A8CAE8562C6238CB00431371 /* ProductListingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE8542C6238CB00431371 /* ProductListingTableCell.swift */; };
+		A8CAE8572C6238CB00431371 /* ProductListingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8CAE8552C6238CB00431371 /* ProductListingTableCell.xib */; };
+		A8CAE85B2C6243B800431371 /* ProductListParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE85A2C6243B800431371 /* ProductListParam.swift */; };
+		A8CAE85D2C6250A200431371 /* ProductListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAE85C2C6250A200431371 /* ProductListingModel.swift */; };
+		A9FD65886A9202636558B1C3 /* Pods_HealthGuardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F54EE452C414C397D8738 /* Pods_HealthGuardTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8CAE8082C61DBBC00431371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CAE7E92C61DBBA00431371 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8CAE7F02C61DBBA00431371;
+			remoteInfo = HealthGuard;
+		};
+		A8CAE8122C61DBBC00431371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CAE7E92C61DBBA00431371 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8CAE7F02C61DBBA00431371;
+			remoteInfo = HealthGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2041DFCC8F693BA95ABA7A76 /* Pods_HealthGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F39B907630B38795B886249 /* Pods-HealthGuard-HealthGuardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuard-HealthGuardUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthGuard-HealthGuardUITests/Pods-HealthGuard-HealthGuardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7778C4194C78A31BBC9C58C1 /* Pods-HealthGuard-HealthGuardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuard-HealthGuardUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthGuard-HealthGuardUITests/Pods-HealthGuard-HealthGuardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A7DE477B9C0A2632A2EE367 /* Pods-HealthGuardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuardTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthGuardTests/Pods-HealthGuardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		928F54EE452C414C397D8738 /* Pods_HealthGuardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthGuardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CAE7F12C61DBBA00431371 /* HealthGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CAE7F42C61DBBA00431371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8CAE7F62C61DBBA00431371 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8CAE7FB2C61DBBA00431371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8CAE7FD2C61DBBC00431371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8CAE8002C61DBBC00431371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8CAE8022C61DBBC00431371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CAE8072C61DBBC00431371 /* HealthGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CAE80B2C61DBBC00431371 /* HealthGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGuardTests.swift; sourceTree = "<group>"; };
+		A8CAE8112C61DBBC00431371 /* HealthGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CAE8152C61DBBC00431371 /* HealthGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGuardUITests.swift; sourceTree = "<group>"; };
+		A8CAE8172C61DBBC00431371 /* HealthGuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8CAE8272C61DC4200431371 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A8CAE82D2C61E25E00431371 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		A8CAE8302C61E2A900431371 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A8CAE83A2C61E45100431371 /* ProductCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategories.swift; sourceTree = "<group>"; };
+		A8CAE83F2C61EDAC00431371 /* ProductCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesVC.swift; sourceTree = "<group>"; };
+		A8CAE8412C61F00A00431371 /* ProductCategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCollectionCell.swift; sourceTree = "<group>"; };
+		A8CAE8422C61F00A00431371 /* ProductCategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCategoryCollectionCell.xib; sourceTree = "<group>"; };
+		A8CAE8452C61F0B700431371 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		A8CAE8472C61F19A00431371 /* ProductEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndPoint.swift; sourceTree = "<group>"; };
+		A8CAE8492C62336000431371 /* codableHelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codableHelperClass.swift; sourceTree = "<group>"; };
+		A8CAE84B2C62340A00431371 /* UIViewExtension + shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewExtension + shadow.swift"; sourceTree = "<group>"; };
+		A8CAE8522C6238A600431371 /* ProductListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingVC.swift; sourceTree = "<group>"; };
+		A8CAE8542C6238CB00431371 /* ProductListingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingTableCell.swift; sourceTree = "<group>"; };
+		A8CAE8552C6238CB00431371 /* ProductListingTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListingTableCell.xib; sourceTree = "<group>"; };
+		A8CAE85A2C6243B800431371 /* ProductListParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListParam.swift; sourceTree = "<group>"; };
+		A8CAE85C2C6250A200431371 /* ProductListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingModel.swift; sourceTree = "<group>"; };
+		EFCD7C7E9D6B485EDC8490BB /* Pods_HealthGuard_HealthGuardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthGuard_HealthGuardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13E1157E2F855E31DD9FF91 /* Pods-HealthGuard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuard.debug.xcconfig"; path = "Target Support Files/Pods-HealthGuard/Pods-HealthGuard.debug.xcconfig"; sourceTree = "<group>"; };
+		F4829B6FD8E97C707ECB2B13 /* Pods-HealthGuard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuard.release.xcconfig"; path = "Target Support Files/Pods-HealthGuard/Pods-HealthGuard.release.xcconfig"; sourceTree = "<group>"; };
+		F5CE536F670033C957A9DCC1 /* Pods-HealthGuardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuardTests.release.xcconfig"; path = "Target Support Files/Pods-HealthGuardTests/Pods-HealthGuardTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8CAE7EE2C61DBBA00431371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F5BABAB993DC4926879BDD /* Pods_HealthGuard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CAE8042C61DBBC00431371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FD65886A9202636558B1C3 /* Pods_HealthGuardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CAE80E2C61DBBC00431371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545E469C111E1D50D02F37A8 /* Pods_HealthGuard_HealthGuardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59F58F02D35E1EDFC5996B0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F13E1157E2F855E31DD9FF91 /* Pods-HealthGuard.debug.xcconfig */,
+				F4829B6FD8E97C707ECB2B13 /* Pods-HealthGuard.release.xcconfig */,
+				7778C4194C78A31BBC9C58C1 /* Pods-HealthGuard-HealthGuardUITests.debug.xcconfig */,
+				5F39B907630B38795B886249 /* Pods-HealthGuard-HealthGuardUITests.release.xcconfig */,
+				7A7DE477B9C0A2632A2EE367 /* Pods-HealthGuardTests.debug.xcconfig */,
+				F5CE536F670033C957A9DCC1 /* Pods-HealthGuardTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		715876C38467C507153120A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2041DFCC8F693BA95ABA7A76 /* Pods_HealthGuard.framework */,
+				EFCD7C7E9D6B485EDC8490BB /* Pods_HealthGuard_HealthGuardUITests.framework */,
+				928F54EE452C414C397D8738 /* Pods_HealthGuardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8CAE7E82C61DBBA00431371 = {
+			isa = PBXGroup;
+			children = (
+				A8CAE7F32C61DBBA00431371 /* HealthGuard */,
+				A8CAE80A2C61DBBC00431371 /* HealthGuardTests */,
+				A8CAE8142C61DBBC00431371 /* HealthGuardUITests */,
+				A8CAE7F22C61DBBA00431371 /* Products */,
+				59F58F02D35E1EDFC5996B0C /* Pods */,
+				715876C38467C507153120A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8CAE7F22C61DBBA00431371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE7F12C61DBBA00431371 /* HealthGuard.app */,
+				A8CAE8072C61DBBC00431371 /* HealthGuardTests.xctest */,
+				A8CAE8112C61DBBC00431371 /* HealthGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8CAE7F32C61DBBA00431371 /* HealthGuard */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8242C61DBDC00431371 /* Application */,
+				A8CAE8262C61DC2400431371 /* Constant */,
+				A8CAE8292C61DEDF00431371 /* Extension */,
+				A8CAE82C2C61E24F00431371 /* Utility */,
+				A8CAE82F2C61E29700431371 /* Helper */,
+				A8CAE8352C61E39300431371 /* Screens */,
+				A8CAE8322C61E31C00431371 /* Storyboard */,
+				A8CAE8342C61E35300431371 /* Resources */,
+				A8CAE8022C61DBBC00431371 /* Info.plist */,
+			);
+			path = HealthGuard;
+			sourceTree = "<group>";
+		};
+		A8CAE80A2C61DBBC00431371 /* HealthGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE80B2C61DBBC00431371 /* HealthGuardTests.swift */,
+			);
+			path = HealthGuardTests;
+			sourceTree = "<group>";
+		};
+		A8CAE8142C61DBBC00431371 /* HealthGuardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8152C61DBBC00431371 /* HealthGuardUITests.swift */,
+				A8CAE8172C61DBBC00431371 /* HealthGuardUITestsLaunchTests.swift */,
+			);
+			path = HealthGuardUITests;
+			sourceTree = "<group>";
+		};
+		A8CAE8242C61DBDC00431371 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE7F42C61DBBA00431371 /* AppDelegate.swift */,
+				A8CAE7F62C61DBBA00431371 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A8CAE8262C61DC2400431371 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8272C61DC4200431371 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A8CAE8292C61DEDF00431371 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8492C62336000431371 /* codableHelperClass.swift */,
+				A8CAE84B2C62340A00431371 /* UIViewExtension + shadow.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A8CAE82C2C61E24F00431371 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE82D2C61E25E00431371 /* EndPointType.swift */,
+				A8CAE8472C61F19A00431371 /* ProductEndPoint.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A8CAE82F2C61E29700431371 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8302C61E2A900431371 /* APIManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A8CAE8322C61E31C00431371 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE7FA2C61DBBA00431371 /* Main.storyboard */,
+				A8CAE7FF2C61DBBC00431371 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A8CAE8342C61E35300431371 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE7FD2C61DBBC00431371 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8CAE8352C61E39300431371 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8362C61E3CE00431371 /* Product */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A8CAE8362C61E3CE00431371 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8392C61E3FE00431371 /* Model */,
+				A8CAE8382C61E3F400431371 /* View */,
+				A8CAE8372C61E3E600431371 /* ViewModel */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		A8CAE8372C61E3E600431371 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8452C61F0B700431371 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8CAE8382C61E3F400431371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE8412C61F00A00431371 /* ProductCategoryCollectionCell.swift */,
+				A8CAE8422C61F00A00431371 /* ProductCategoryCollectionCell.xib */,
+				A8CAE8542C6238CB00431371 /* ProductListingTableCell.swift */,
+				A8CAE8552C6238CB00431371 /* ProductListingTableCell.xib */,
+				A8CAE83E2C61ED8400431371 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8CAE8392C61E3FE00431371 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE83A2C61E45100431371 /* ProductCategories.swift */,
+				A8CAE85A2C6243B800431371 /* ProductListParam.swift */,
+				A8CAE85C2C6250A200431371 /* ProductListingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8CAE83E2C61ED8400431371 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8CAE83F2C61EDAC00431371 /* ProductCategoriesVC.swift */,
+				A8CAE8522C6238A600431371 /* ProductListingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8CAE7F02C61DBBA00431371 /* HealthGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8CAE81B2C61DBBC00431371 /* Build configuration list for PBXNativeTarget "HealthGuard" */;
+			buildPhases = (
+				06EC43B474D1F063A321E7D7 /* [CP] Check Pods Manifest.lock */,
+				A8CAE7ED2C61DBBA00431371 /* Sources */,
+				A8CAE7EE2C61DBBA00431371 /* Frameworks */,
+				A8CAE7EF2C61DBBA00431371 /* Resources */,
+				4A9E8ADCF49D5E5083DDC291 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthGuard;
+			productName = HealthGuard;
+			productReference = A8CAE7F12C61DBBA00431371 /* HealthGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8CAE8062C61DBBC00431371 /* HealthGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8CAE81E2C61DBBC00431371 /* Build configuration list for PBXNativeTarget "HealthGuardTests" */;
+			buildPhases = (
+				E9735E61FEEAC86381B9DE86 /* [CP] Check Pods Manifest.lock */,
+				A8CAE8032C61DBBC00431371 /* Sources */,
+				A8CAE8042C61DBBC00431371 /* Frameworks */,
+				A8CAE8052C61DBBC00431371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8CAE8092C61DBBC00431371 /* PBXTargetDependency */,
+			);
+			name = HealthGuardTests;
+			productName = HealthGuardTests;
+			productReference = A8CAE8072C61DBBC00431371 /* HealthGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8CAE8102C61DBBC00431371 /* HealthGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8CAE8212C61DBBC00431371 /* Build configuration list for PBXNativeTarget "HealthGuardUITests" */;
+			buildPhases = (
+				3F720A4B9CA0D439CB9B3E3E /* [CP] Check Pods Manifest.lock */,
+				A8CAE80D2C61DBBC00431371 /* Sources */,
+				A8CAE80E2C61DBBC00431371 /* Frameworks */,
+				A8CAE80F2C61DBBC00431371 /* Resources */,
+				CA389D8BA664D49A94D947C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8CAE8132C61DBBC00431371 /* PBXTargetDependency */,
+			);
+			name = HealthGuardUITests;
+			productName = HealthGuardUITests;
+			productReference = A8CAE8112C61DBBC00431371 /* HealthGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8CAE7E92C61DBBA00431371 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A8CAE7F02C61DBBA00431371 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A8CAE8062C61DBBC00431371 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A8CAE7F02C61DBBA00431371;
+					};
+					A8CAE8102C61DBBC00431371 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A8CAE7F02C61DBBA00431371;
+					};
+				};
+			};
+			buildConfigurationList = A8CAE7EC2C61DBBA00431371 /* Build configuration list for PBXProject "HealthGuard" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8CAE7E82C61DBBA00431371;
+			productRefGroup = A8CAE7F22C61DBBA00431371 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8CAE7F02C61DBBA00431371 /* HealthGuard */,
+				A8CAE8062C61DBBC00431371 /* HealthGuardTests */,
+				A8CAE8102C61DBBC00431371 /* HealthGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8CAE7EF2C61DBBA00431371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CAE8012C61DBBC00431371 /* LaunchScreen.storyboard in Resources */,
+				A8CAE7FE2C61DBBC00431371 /* Assets.xcassets in Resources */,
+				A8CAE8572C6238CB00431371 /* ProductListingTableCell.xib in Resources */,
+				A8CAE7FC2C61DBBA00431371 /* Main.storyboard in Resources */,
+				A8CAE8442C61F00A00431371 /* ProductCategoryCollectionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CAE8052C61DBBC00431371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CAE80F2C61DBBC00431371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06EC43B474D1F063A321E7D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthGuard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F720A4B9CA0D439CB9B3E3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthGuard-HealthGuardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9E8ADCF49D5E5083DDC291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthGuard/Pods-HealthGuard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthGuard/Pods-HealthGuard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthGuard/Pods-HealthGuard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA389D8BA664D49A94D947C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthGuard-HealthGuardUITests/Pods-HealthGuard-HealthGuardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthGuard-HealthGuardUITests/Pods-HealthGuard-HealthGuardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthGuard-HealthGuardUITests/Pods-HealthGuard-HealthGuardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9735E61FEEAC86381B9DE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthGuardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8CAE7ED2C61DBBA00431371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CAE85D2C6250A200431371 /* ProductListingModel.swift in Sources */,
+				A8CAE7F52C61DBBA00431371 /* AppDelegate.swift in Sources */,
+				A8CAE84C2C62340A00431371 /* UIViewExtension + shadow.swift in Sources */,
+				A8CAE8562C6238CB00431371 /* ProductListingTableCell.swift in Sources */,
+				A8CAE85B2C6243B800431371 /* ProductListParam.swift in Sources */,
+				A8CAE8432C61F00A00431371 /* ProductCategoryCollectionCell.swift in Sources */,
+				A8CAE82E2C61E25E00431371 /* EndPointType.swift in Sources */,
+				A8CAE7F72C61DBBA00431371 /* SceneDelegate.swift in Sources */,
+				A8CAE83B2C61E45100431371 /* ProductCategories.swift in Sources */,
+				A8CAE8532C6238A600431371 /* ProductListingVC.swift in Sources */,
+				A8CAE8462C61F0B700431371 /* ProductViewModel.swift in Sources */,
+				A8CAE84A2C62336000431371 /* codableHelperClass.swift in Sources */,
+				A8CAE8282C61DC4200431371 /* Constant.swift in Sources */,
+				A8CAE8402C61EDAC00431371 /* ProductCategoriesVC.swift in Sources */,
+				A8CAE8482C61F19A00431371 /* ProductEndPoint.swift in Sources */,
+				A8CAE8312C61E2A900431371 /* APIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CAE8032C61DBBC00431371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CAE80C2C61DBBC00431371 /* HealthGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CAE80D2C61DBBC00431371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CAE8182C61DBBC00431371 /* HealthGuardUITestsLaunchTests.swift in Sources */,
+				A8CAE8162C61DBBC00431371 /* HealthGuardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8CAE8092C61DBBC00431371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8CAE7F02C61DBBA00431371 /* HealthGuard */;
+			targetProxy = A8CAE8082C61DBBC00431371 /* PBXContainerItemProxy */;
+		};
+		A8CAE8132C61DBBC00431371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8CAE7F02C61DBBA00431371 /* HealthGuard */;
+			targetProxy = A8CAE8122C61DBBC00431371 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8CAE7FA2C61DBBA00431371 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8CAE7FB2C61DBBA00431371 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8CAE7FF2C61DBBC00431371 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8CAE8002C61DBBC00431371 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8CAE8192C61DBBC00431371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8CAE81A2C61DBBC00431371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8CAE81C2C61DBBC00431371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13E1157E2F855E31DD9FF91 /* Pods-HealthGuard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthGuard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-HealthGuard.HealthGuard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8CAE81D2C61DBBC00431371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4829B6FD8E97C707ECB2B13 /* Pods-HealthGuard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthGuard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-HealthGuard.HealthGuard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8CAE81F2C61DBBC00431371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7DE477B9C0A2632A2EE367 /* Pods-HealthGuardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-HealthGuard.HealthGuardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthGuard.app/HealthGuard";
+			};
+			name = Debug;
+		};
+		A8CAE8202C61DBBC00431371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CE536F670033C957A9DCC1 /* Pods-HealthGuardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-HealthGuard.HealthGuardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthGuard.app/HealthGuard";
+			};
+			name = Release;
+		};
+		A8CAE8222C61DBBC00431371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7778C4194C78A31BBC9C58C1 /* Pods-HealthGuard-HealthGuardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-HealthGuard.HealthGuardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthGuard;
+			};
+			name = Debug;
+		};
+		A8CAE8232C61DBBC00431371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F39B907630B38795B886249 /* Pods-HealthGuard-HealthGuardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-HealthGuard.HealthGuardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8CAE7EC2C61DBBA00431371 /* Build configuration list for PBXProject "HealthGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CAE8192C61DBBC00431371 /* Debug */,
+				A8CAE81A2C61DBBC00431371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8CAE81B2C61DBBC00431371 /* Build configuration list for PBXNativeTarget "HealthGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CAE81C2C61DBBC00431371 /* Debug */,
+				A8CAE81D2C61DBBC00431371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8CAE81E2C61DBBC00431371 /* Build configuration list for PBXNativeTarget "HealthGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CAE81F2C61DBBC00431371 /* Debug */,
+				A8CAE8202C61DBBC00431371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8CAE8212C61DBBC00431371 /* Build configuration list for PBXNativeTarget "HealthGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CAE8222C61DBBC00431371 /* Debug */,
+				A8CAE8232C61DBBC00431371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8CAE7E92C61DBBA00431371 /* Project object */;
+}
